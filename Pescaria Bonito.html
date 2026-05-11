@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pescăria Bonito Galați | Pește proaspăt, grill și delicii pescărești</title>
+<meta name="description" content="Descoperă Pescăria Bonito din Galați — pește proaspăt, produse pescărești, pește pe grill, icre, salate și preparate gustoase pentru acasă." />
+<meta name="keywords" content="pescărie Galați, pește proaspăt Galați, Pescăria Bonito, pește pe grill Galați, icre Galați, fructe de mare Galați" />
+<meta property="og:title" content="Pescăria Bonito Galați | Pește proaspăt, grill și delicii pescărești" />
+<meta property="og:description" content="Pește proaspăt, preparate gustoase și produse atent alese în Galați." />
+<meta property="og:type" content="restaurant" />
+<meta property="og:locale" content="ro_RO" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;1,6..96,400;1,6..96,500&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Pescăria Bonito",
+  "image": "",
+  "description": "Pescărie locală în Galați — pește proaspăt din Delta Dunării, pește de import, pește pe grill, icre, salate și preparate gătite.",
+  "servesCuisine": ["Seafood", "Romanian"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Strada Roșiori",
+    "addressLocality": "Galați",
+    "postalCode": "800402",
+    "addressCountry": "RO"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.4286594,
+    "longitude": 28.0472978
+  },
+  "telephone": "+40755122422",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "hasMenu": "Pește proaspăt, pește pe grill, icre, salate, preparate gătite",
+  "areaServed": "Galați"
+}
+</script>
+
+<style>
+  :root {
+    --navy-950: #050d18;
+    --navy-900: #08131f;
+    --navy-800: #0a1828;
+    --navy-700: #0f2236;
+    --navy-600: #163049;
+    --navy-line: rgba(244, 237, 224, 0.12);
+    --gold: #c9a36b;
+    --gold-bright: #e0bd83;
+    --gold-deep: #9c7c4a;
+    --cream: #f4ede0;
+    --cream-dim: #d9d1c2;
+    --cream-faint: rgba(244, 237, 224, 0.6);
+    --mute: rgba(244, 237, 224, 0.45);
+
+    --font-display: "Bodoni Moda", "Times New Roman", serif;
+    --font-body: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: "JetBrains Mono", "SF Mono", monospace;
+
+    --max: 1320px;
+    --pad: clamp(1.25rem, 4vw, 3.5rem);
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--navy-900);
+    color: var(--cream);
+    font-family: var(--font-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection { background: var(--gold); color: var(--navy-950); }
+
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; }
+
+  /* ------------------------------ NAV ------------------------------ */
+  .nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    padding: 1.1rem var(--pad);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(5,13,24,0.85) 0%, rgba(5,13,24,0) 100%);
+    backdrop-filter: blur(0px);
+    transition: background 400ms ease, padding 400ms ease, backdrop-filter 400ms ease, border-color 400ms ease;
+    border-bottom: 1px solid transparent;
+  }
+  .nav.scrolled {
+    background: rgba(5,13,24,0.88);
+    backdrop-filter: blur(14px);
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom-color: var(--navy-line);
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    letter-spacing: 0.04em;
+    color: var(--cream);
+  }
+  .brand .mark {
+    width: 32px; height: 32px;
+    display: grid; place-items: center;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    color: var(--gold);
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .brand .name { font-style: italic; font-weight: 500; }
+  .brand .name b { font-style: normal; font-weight: 600; letter-spacing: 0.06em; }
+
+  .nav-links {
+    display: flex;
+    gap: 2.2rem;
+    list-style: none;
+    margin: 0; padding: 0;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .nav-links a {
+    color: var(--cream-dim);
+    transition: color 200ms;
+    position: relative;
+    padding: 0.25rem 0;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -4px;
+    height: 1px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease;
+  }
+  .nav-links a:hover::after { transform: scaleX(1); }
+
+  .nav-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.65rem 1.1rem;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    background: transparent;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: all 250ms ease;
+  }
+  .nav-cta:hover {
+    background: var(--gold);
+    color: var(--navy-950);
+  }
+  .nav-cta .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 8px var(--gold);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  .nav-cta:hover .dot { background: var(--navy-950); box-shadow: none; }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.4; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.1); }
+  }
+
+  .menu-toggle { display: none; }
+  .mobile-menu { display: none; }
+
+  @media (max-width: 880px) {
+    .nav-links, .nav-cta-wrap { display: none; }
+    .menu-toggle {
+      display: flex; flex-direction: column; gap: 5px;
+      background: none; border: none; padding: 8px;
+    }
+    .menu-toggle span {
+      width: 22px; height: 1px; background: var(--cream);
+      transition: transform 300ms, opacity 200ms;
+    }
+    .menu-toggle.open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+    .menu-toggle.open span:nth-child(2) { opacity: 0; }
+    .menu-toggle.open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--navy-950);
+      z-index: 49;
+      padding: 6rem var(--pad) 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      transform: translateY(-100%);
+      transition: transform 400ms cubic-bezier(0.65, 0, 0.35, 1);
+    }
+    .mobile-menu.open { transform: translateY(0); }
+    .mobile-menu a {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-style: italic;
+      color: var(--cream);
+      border-bottom: 1px solid var(--navy-line);
+      padding-bottom: 1rem;
+    }
+    .mobile-menu a:hover { color: var(--gold); }
+    .mobile-menu .mob-cta {
+      margin-top: 1rem;
+      padding: 1rem 1.5rem;
+      background: var(--gold);
+      color: var(--navy-950);
+      text-align: center;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: var(--font-body);
+      font-style: normal;
+      border-bottom: none;
+    }
+  }
+
+  /* ------------------------------ HERO ------------------------------ */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    background: var(--navy-950);
+  }
+
+  .hero-bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(201, 163, 107, 0.18) 0%, transparent 55%),
+      radial-gradient(ellipse at 20% 80%, rgba(22, 48, 73, 0.6) 0%, transparent 60%),
+      linear-gradient(135deg, #050d18 0%, #0a1828 50%, #08131f 100%);
+  }
+
+  /* subtle wave/scale texture in SVG */
+  .hero-bg::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+      repeating-linear-gradient(
+        100deg,
+        transparent 0 14px,
+        rgba(201, 163, 107, 0.025) 14px 15px
+      );
+    mix-blend-mode: screen;
+    opacity: 0.6;
+  }
+
+  .hero-vignette {
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(5,13,24,0.5) 0%, transparent 30%, transparent 50%, rgba(5,13,24,0.95) 100%);
+    pointer-events: none;
+  }
+
+  /* Decorative fish silhouette - simple shape */
+  .hero-fish {
+    position: absolute;
+    right: -10%;
+    top: 18%;
+    width: 70%;
+    max-width: 1100px;
+    opacity: 0.13;
+    pointer-events: none;
+    transform: rotate(-8deg);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--pad) clamp(3rem, 8vh, 6rem);
+  }
+
+  .hero-meta {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-faint);
+  }
+  .hero-meta .line {
+    flex: 0 0 48px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .hero-meta .est { color: var(--gold); }
+
+  .hero-title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(3rem, 9vw, 8.5rem);
+    line-height: 0.92;
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--cream);
+    text-wrap: balance;
+  }
+  .hero-title .italic {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+  }
+  .hero-title .ampersand {
+    display: inline-block;
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 400;
+    transform: translateY(0.05em);
+  }
+
+  .hero-sub-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: clamp(2rem, 6vw, 5rem);
+    align-items: end;
+    margin-top: clamp(2.5rem, 6vh, 4rem);
+  }
+  @media (max-width: 760px) {
+    .hero-sub-grid { grid-template-columns: 1fr; gap: 2rem; }
+  }
+
+  .hero-sub {
+    font-size: clamp(1rem, 1.4vw, 1.15rem);
+    line-height: 1.6;
+    color: var(--cream-dim);
+    max-width: 38ch;
+    font-weight: 300;
+  }
+  .hero-sub .trust {
+    display: block;
+    margin-top: 1.1rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--navy-line);
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    line-height: 1.6;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1.1rem 1.9rem;
+    background: var(--gold);
+    color: var(--navy-950);
+    border: 1px solid var(--gold);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all 280ms cubic-bezier(0.65, 0, 0.35, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary:hover {
+    background: var(--gold-bright);
+    border-color: var(--gold-bright);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px -10px rgba(201, 163, 107, 0.5);
+  }
+  .btn-primary svg { width: 14px; height: 14px; }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1.05rem 1.7rem;
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(244, 237, 224, 0.25);
+    border-radius: 999px;
+    font-size: 0.82rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 280ms ease;
+  }
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  .btn-secondary svg { width: 14px; height: 14px; }
+
+  .scroll-cue {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--cream-faint);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    z-index: 2;
+  }
+  .scroll-cue::after {
+    content: "";
+    width: 1px; height: 40px;
+    background: linear-gradient(180deg, var(--gold) 0%, transparent 100%);
+    animation: drip 2.2s ease-in-out infinite;
+  }
+  @keyframes drip {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* ------------------------------ SECTIONS ------------------------------ */
+  section { position: relative; }
+
+  .section {
+    padding: clamp(5rem, 12vh, 9rem) var(--pad);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+
+  .section-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+  .section-eyebrow::before {
+    content: "";
+    width: 28px; height: 1px;
+    background: var(--gold);
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(2.25rem, 5.5vw, 4.5rem);
+    line-height: 1;
+    letter-spacing: -0.015em;
+    margin: 0 0 1.2rem;
+    color: var(--cream);
+    text-wrap: balance;
+  }
+  .section-title .it {
+    font-style: italic;
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .section-lead {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: var(--cream-dim);
+    max-width: 56ch;
+    font-weight: 300;
+  }
+
+  /* ------------------------------ ABOUT ------------------------------ */
+  .about {
+    background: linear-gradient(180deg, var(--navy-900) 0%, var(--navy-800) 100%);
+  }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: clamp(2.5rem, 6vw, 5rem);
+    align-items: center;
+  }
+  @media (max-width: 880px) {
+    .about-grid { grid-template-columns: 1fr; }
+  }
+
+  .about-image {
+    position: relative;
+    aspect-ratio: 4/5;
+    background: var(--navy-800);
+    border: 1px solid var(--navy-line);
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+  }
+  .about-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+    filter: saturate(0.85) contrast(1.05) brightness(0.92);
+  }
+  .about-image::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid var(--gold);
+    opacity: 0.55;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .about-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(5,13,24,0) 40%, rgba(5,13,24,0.55) 100%);
+    pointer-events: none;
+    z-index: 1;
+  }
+  .about-image .badge {
+    position: absolute;
+    bottom: 1.5rem; right: 1.5rem;
+    background: var(--cream);
+    color: var(--navy-950);
+    padding: 0.6rem 1rem;
+    font-family: var(--font-display);
+    font-style: italic;
+    font-size: 0.85rem;
+    border-radius: 999px;
+    z-index: 3;
+  }
+
+  .about-numbers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--navy-line);
+  }
+  .about-numbers .num {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .about-numbers .label {
+    margin-top: 0.6rem;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--cream-faint);
+  }
+
+  /* ------------------------------ PRODUCTS ------------------------------ */
+  .products {
+    background: var(--navy-900);
+  }
+  .products-head {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: end;
+    margin-bottom: clamp(3rem, 6vw, 5rem);
+  }
+  @media (max-width: 880px) {
+    .products-head { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--navy-line);
+    border: 1px solid var(--navy-line);
+  }
+  @media (max-width: 880px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .product-grid { grid-template-columns: 1fr; } }
+
+  .product {
+    position: relative;
+    background: var(--navy-900);
+    padding: 2.5rem 2rem 2.2rem;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: background 400ms ease;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .product::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(90deg, transparent 0 12px, rgba(201, 163, 107, 0.04) 12px 13px),
+      radial-gradient(ellipse at 50% 100%, rgba(201, 163, 107, 0.12) 0%, transparent 65%);
+    opacity: 0;
+    transition: opacity 500ms ease;
+    pointer-events: none;
+  }
+  .product:hover { background: var(--navy-800); }
+  .product:hover::before { opacity: 1; }
+
+  .product-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: auto;
+  }
+
+  .product-vis {
+    position: absolute;
+    top: 1.5rem; right: 1.5rem;
+    width: 70px; height: 70px;
+    border: 1px solid var(--gold-deep);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--gold);
+    transition: transform 600ms cubic-bezier(0.65, 0, 0.35, 1), border-color 300ms;
+  }
+  .product:hover .product-vis {
+    transform: rotate(45deg);
+    border-color: var(--gold);
+  }
+  .product-vis svg { width: 28px; height: 28px; transition: transform 600ms; }
+  .product:hover .product-vis svg { transform: rotate(-45deg); }
+
+  .product-name {
+    font-family: var(--font-display);
+    font-size: 1.85rem;
+    font-weight: 400;
+    line-height: 1.05;
+    margin: 4rem 0 0.8rem;
+    color: var(--cream);
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+  }
+  .product-name .it { font-style: italic; color: var(--gold); }
+
+  .product-desc {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--cream-faint);
+    font-weight: 300;
+    margin: 0 0 1.5rem;
+  }
+
+  .product-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: auto;
+  }
+  .product-tag {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--cream-faint);
+    padding: 0.3rem 0.6rem;
+    border: 1px solid var(--navy-line);
+    border-radius: 999px;
+  }
+
+  /* ------------------------------ WHY US ------------------------------ */
+  .why {
+    background: var(--navy-950);
+    position: relative;
+    overflow: hidden;
+  }
+  .why::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 80% 20%, rgba(201, 163, 107, 0.07) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .why-head { max-width: 760px; margin-bottom: clamp(3rem, 5vw, 4.5rem); position: relative; }
+
+  .why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    position: relative;
+  }
+  @media (max-width: 880px) { .why-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .why-grid { grid-template-columns: 1fr; } }
+
+  .benefit {
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--gold-deep);
+    position: relative;
+    transition: transform 400ms ease;
+  }
+  .benefit:hover { transform: translateY(-4px); }
+
+  .benefit-num {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  .benefit-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 0 0 0.7rem;
+    color: var(--cream);
+  }
+  .benefit-title .it { font-style: italic; color: var(--gold); }
+  .benefit-desc {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--cream-faint);
+    font-weight: 300;
+    margin: 0;
+  }
+
+  /* ------------------------------ TRUST/REVIEWS ------------------------------ */
+  .trust-sec {
+    background: linear-gradient(180deg, var(--navy-950) 0%, var(--navy-900) 100%);
+    text-align: center;
+  }
+  .trust-inner { max-width: 820px; margin: 0 auto; }
+  .trust-quote {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    font-size: clamp(1.7rem, 3.5vw, 2.6rem);
+    line-height: 1.25;
+    color: var(--cream);
+    margin: 0 0 2rem;
+    text-wrap: balance;
+  }
+  .trust-quote .gold { color: var(--gold); }
+  .trust-quote::before, .trust-quote::after {
+    content: '"';
+    color: var(--gold);
+    font-size: 1.4em;
+    line-height: 0;
+    vertical-align: -0.3em;
+    margin: 0 0.05em;
+  }
+  .trust-sub {
+    font-size: 1rem;
+    color: var(--cream-faint);
+    max-width: 52ch;
+    margin: 0 auto 2.5rem;
+    font-weight: 300;
+    line-height: 1.65;
+  }
+  .trust-rule {
+    width: 64px; height: 1px;
+    background: var(--gold);
+    margin: 0 auto 2rem;
+  }
+
+  /* ------------------------------ LOCATION ------------------------------ */
+  .location {
+    background: var(--navy-900);
+    padding: 0 0 clamp(5rem, 12vh, 9rem);
+  }
+  .loc-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 0;
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: clamp(5rem, 12vh, 9rem) 0 0;
+  }
+  @media (max-width: 880px) { .loc-grid { grid-template-columns: 1fr; padding-inline: 0; } }
+
+  .loc-info {
+    padding: 0 var(--pad) 0;
+    align-self: center;
+  }
+  .loc-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+    margin-top: 2.5rem;
+  }
+  .loc-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 1.5rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid var(--navy-line);
+    align-items: baseline;
+  }
+  .loc-row .key {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+  .loc-row .val { color: var(--cream); font-size: 1rem; line-height: 1.5; }
+  .loc-row .val a { color: var(--cream); border-bottom: 1px solid var(--navy-line); transition: border-color 200ms, color 200ms; }
+  .loc-row .val a:hover { color: var(--gold); border-color: var(--gold); }
+  .loc-row .val small { display: block; color: var(--cream-faint); font-size: 0.8rem; margin-top: 0.3rem; }
+
+  .map-frame {
+    position: relative;
+    aspect-ratio: 5/4;
+    background: var(--navy-800);
+    overflow: hidden;
+    border-left: 1px solid var(--navy-line);
+  }
+  @media (max-width: 880px) {
+    .map-frame { border-left: none; border-top: 1px solid var(--navy-line); margin: 2.5rem var(--pad) 0; aspect-ratio: 4/3; }
+  }
+  .map-frame iframe {
+    width: 100%; height: 100%;
+    border: 0;
+    filter: grayscale(0.5) brightness(0.85) contrast(1.05) hue-rotate(180deg) invert(0.92);
+  }
+  .map-overlay {
+    position: absolute;
+    bottom: 1.5rem; left: 1.5rem; right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    pointer-events: none;
+  }
+  .map-overlay .open-btn {
+    pointer-events: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.85rem 1.3rem;
+    background: var(--cream);
+    color: var(--navy-950);
+    border-radius: 999px;
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 250ms;
+  }
+  .map-overlay .open-btn:hover { background: var(--gold); }
+  .map-overlay .open-btn svg { width: 14px; height: 14px; }
+
+  /* ------------------------------ CONTACT ------------------------------ */
+  .contact {
+    background: var(--navy-800);
+    padding: clamp(5rem, 12vh, 8rem) var(--pad);
+  }
+  .contact-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: clamp(2.5rem, 6vw, 5rem);
+  }
+  @media (max-width: 880px) {
+    .contact-inner { grid-template-columns: 1fr; }
+  }
+
+  .hours-card {
+    border: 1px solid var(--navy-line);
+    padding: 2rem;
+  }
+  .hours-card h4 {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin: 0 0 1.5rem;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .hours-card h4 .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--cream);
+    font-weight: 500;
+  }
+  .hours-card h4 .status::before {
+    content: "";
+    width: 6px; height: 6px;
+    background: #67c280;
+    border-radius: 50%;
+    box-shadow: 0 0 8px #67c280;
+  }
+  .hours-list {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: grid;
+    gap: 0.7rem;
+  }
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.95rem;
+    color: var(--cream-dim);
+    padding-bottom: 0.7rem;
+    border-bottom: 1px dashed var(--navy-line);
+  }
+  .hours-list li:last-child { border-bottom: none; padding-bottom: 0; }
+  .hours-list li.today { color: var(--gold); }
+  .hours-list li .day { letter-spacing: 0.05em; }
+  .hours-list li .time { font-family: var(--font-mono); font-size: 0.85rem; }
+
+  .contact-actions { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+  .contact-actions .btn-primary, .contact-actions .btn-secondary { justify-content: center; width: 100%; }
+
+  .socials {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--navy-line);
+  }
+  .social-btn {
+    width: 44px; height: 44px;
+    display: grid; place-items: center;
+    border: 1px solid var(--navy-line);
+    border-radius: 50%;
+    color: var(--cream-dim);
+    transition: all 250ms;
+  }
+  .social-btn:hover { color: var(--gold); border-color: var(--gold); transform: translateY(-2px); }
+  .social-btn svg { width: 16px; height: 16px; }
+
+  /* ------------------------------ FINAL CTA ------------------------------ */
+  .final {
+    position: relative;
+    background: var(--navy-950);
+    padding: clamp(6rem, 15vh, 11rem) var(--pad);
+    text-align: center;
+    overflow: hidden;
+  }
+  .final::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 50% 100%, rgba(201, 163, 107, 0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .final-inner { position: relative; max-width: 900px; margin: 0 auto; }
+  .final-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    color: var(--cream);
+    margin: 0 0 1.5rem;
+    text-wrap: balance;
+  }
+  .final-title .it { font-style: italic; color: var(--gold); font-weight: 500; }
+  .final-sub {
+    font-size: 1.1rem;
+    color: var(--cream-dim);
+    max-width: 50ch;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+    font-weight: 300;
+  }
+  .final-ctas { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; }
+
+  /* ------------------------------ FOOTER ------------------------------ */
+  footer {
+    background: var(--navy-950);
+    padding: 2.5rem var(--pad) 2rem;
+    border-top: 1px solid var(--navy-line);
+  }
+  .footer-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cream-faint);
+  }
+  .footer-inner a:hover { color: var(--gold); }
+
+  /* ------------------------------ ANIMATIONS ------------------------------ */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 900ms cubic-bezier(0.16, 1, 0.3, 1), transform 900ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .reveal.in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal.d1 { transition-delay: 80ms; }
+  .reveal.d2 { transition-delay: 160ms; }
+  .reveal.d3 { transition-delay: 240ms; }
+  .reveal.d4 { transition-delay: 320ms; }
+  .reveal.d5 { transition-delay: 400ms; }
+  .reveal.d6 { transition-delay: 480ms; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .scroll-cue::after { animation: none; }
+    .nav-cta .dot { animation: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<nav class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Pescăria Bonito">
+    <span class="mark">B</span>
+    <span class="name">Pescăria <b>BONITO</b></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#despre">Despre</a></li>
+    <li><a href="#produse">Produse</a></li>
+    <li><a href="#alege">De ce noi</a></li>
+    <li><a href="#locatie">Locație</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-cta-wrap">
+    <a href="tel:+40755122422" class="nav-cta">
+      <span class="dot"></span>
+      Sună acum
+    </a>
+  </div>
+  <button class="menu-toggle" id="menuToggle" aria-label="Meniu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#despre">Despre</a>
+  <a href="#produse">Produse</a>
+  <a href="#alege">De ce noi</a>
+  <a href="#locatie">Locație</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+40755122422" class="mob-cta">Sună acum</a>
+</div>
+
+<!-- ============== HERO ============== -->
+<section class="hero" id="top" data-screen-label="01 Hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <!-- Decorative fish silhouette -->
+  <svg class="hero-fish" viewBox="0 0 800 300" aria-hidden="true">
+    <defs>
+      <linearGradient id="fishGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#c9a36b" stop-opacity="0.4"/>
+        <stop offset="100%" stop-color="#c9a36b" stop-opacity="0.05"/>
+      </linearGradient>
+    </defs>
+    <path d="M 50,150 Q 200,40 450,150 Q 600,90 720,150 Q 760,170 780,150 Q 760,130 720,150 Q 600,210 450,150 Q 200,260 50,150 Z" fill="url(#fishGrad)" stroke="#c9a36b" stroke-opacity="0.3" stroke-width="1"/>
+    <circle cx="430" cy="135" r="4" fill="#c9a36b" opacity="0.4"/>
+  </svg>
+
+  <div class="hero-vignette"></div>
+
+  <div class="hero-content">
+    <div class="hero-meta reveal">
+      <span class="line"></span>
+      <span>Galați · România</span>
+      <span class="est">— Pescărie locală</span>
+    </div>
+
+    <h1 class="hero-title reveal d1">
+      Pește proaspăt,<br/>
+      <span class="italic">tradiție</span> <span class="ampersand">&amp;</span> <span class="italic">gust</span><br/>
+      din Delta Dunării.
+    </h1>
+
+    <div class="hero-sub-grid">
+      <p class="hero-sub reveal d2">
+        De la peștele zilei până la preparate gătite cu grijă — selecție atentă, pregătire la grătar și aromele Dunării, la doi pași de tine.
+        <span class="trust">Pește proaspăt, preparate gustoase și produse atent alese în Galați</span>
+      </p>
+
+      <div class="hero-ctas reveal d3">
+        <a href="tel:+40755122422" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Sună acum
+        </a>
+        <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener" class="btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Vezi locația pe hartă
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue reveal d4">Scroll</div>
+</section>
+
+<!-- ============== ABOUT ============== -->
+<section class="about" id="despre" data-screen-label="02 Despre">
+  <div class="section">
+    <div class="about-grid">
+      <div class="about-image reveal">
+        <img src="assets/bonito-storefront.jpg" alt="Pescăria Bonito — magazinul din Galați" loading="lazy" />
+        <span class="badge">est. local · Galați</span>
+      </div>
+
+      <div>
+        <span class="section-eyebrow reveal">Despre noi</span>
+        <h2 class="section-title reveal d1">O <span class="it">pescărie</span> locală, cu pește ales pentru tine.</h2>
+        <p class="section-lead reveal d2">
+          La Pescăria Bonito ne ocupăm zilnic de un singur lucru: să aducem pește bun pe masa galațenilor. Selectăm marfă proaspătă din Delta Dunării și din import, pregătim preparate calde și produse de luat acasă — pentru zile obișnuite și ocazii care merită puțin mai mult.
+        </p>
+        <p class="section-lead reveal d3" style="margin-top:1rem;">
+          Aproape de tine, deschis în fiecare zi până seara — pentru o cină gătită rapid sau o vizită în tihnă la vitrină.
+        </p>
+
+        <div class="about-numbers">
+          <div class="reveal d4">
+            <div class="num">Zilnic</div>
+            <div class="label">Pește proaspăt în vitrină</div>
+          </div>
+          <div class="reveal d5">
+            <div class="num">Local</div>
+            <div class="label">Pescărie din Galați</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRODUCTS ============== -->
+<section class="products" id="produse" data-screen-label="03 Produse">
+  <div class="section">
+    <div class="products-head">
+      <div>
+        <span class="section-eyebrow reveal">Selecția noastră</span>
+        <h2 class="section-title reveal d1">Din apă <span class="it">direct</span> în vitrina noastră.</h2>
+      </div>
+      <p class="section-lead reveal d2">
+        Categorii care se schimbă odată cu marfa. Treci pe la noi sau întreabă-ne la telefon ce avem proaspăt astăzi.
+      </p>
+    </div>
+
+    <div class="product-grid">
+      <article class="product reveal">
+        <div class="product-num">01 / Vitrina zilei</div>
+        <div class="product-vis">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 16 Q 9 8, 18 12 Q 25 6, 28 16 Q 25 26, 18 20 Q 9 24, 3 16 Z"></path>
+            <path d="M28 16 L31 13 M28 16 L31 19"></path>
+            <circle cx="22" cy="14" r="0.9" fill="currentColor"></circle>
+          </svg>
+        </div>
+        <h3 class="product-name">Pește <span class="it">proaspăt</span></h3>
+        <p class="product-desc">Selecție zilnică, ținută pe gheață și expusă în vitrina rece — pește întreg, gata pentru curățare și pregătire.</p>
+        <div class="product-tags"><span class="product-tag">Vitrină</span><span class="product-tag">Zilnic</span></div>
+      </article>
+
+      <article class="product reveal d1">
+        <div class="product-num">02 / Delta Dunării</div>
+        <div class="product-vis">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 22 Q 8 14, 14 18 T 26 14"></path>
+            <path d="M4 26 Q 8 18, 14 22 T 26 18"></path>
+            <path d="M4 18 Q 8 10, 14 14 T 26 10"></path>
+          </svg>
+        </div>
+        <h3 class="product-name">Pește din <span class="it">Delta Dunării</span></h3>
+        <p class="product-desc">Crap, somn, șalău și alte specii locale. Gustul autentic al apelor românești, pregătit pentru orice rețetă tradițională.</p>
+        <div class="product-tags"><span class="product-tag">Local</span><span class="product-tag">Apă dulce</span></div>
+      </article>
+
+      <article class="product reveal d2">
+        <div class="product-num">03 / Import Grecia</div>
+        <div class="product-vis">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="16" cy="16" r="11"></circle>
+            <path d="M5 16 Q 16 6, 27 16 Q 16 26, 5 16"></path>
+            <path d="M16 5 L16 27"></path>
+          </svg>
+        </div>
+        <h3 class="product-name">Pește de <span class="it">import</span></h3>
+        <p class="product-desc">Specii alese din Grecia și alte mări — dorada, lavrac și alte preferate, pentru gusturi care caută aroma mării.</p>
+        <div class="product-tags"><span class="product-tag">Marin</span><span class="product-tag">Import</span></div>
+      </article>
+
+      <article class="product reveal d3">
+        <div class="product-num">04 / La grătar</div>
+        <div class="product-vis">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="14" width="22" height="10" rx="1"></rect>
+            <path d="M9 14 L9 10 M16 14 L16 8 M23 14 L23 10"></path>
+            <path d="M5 19 L27 19"></path>
+          </svg>
+        </div>
+        <h3 class="product-name">Pește <span class="it">pe grill</span></h3>
+        <p class="product-desc">Pregătit pe loc, cu zeamă de lămâie și ierburi. Comandă-l înainte de a trece pe la noi sau ia-l cald la pachet.</p>
+        <div class="product-tags"><span class="product-tag">Cald</span><span class="product-tag">Takeaway</span></div>
+      </article>
+
+      <article class="product reveal d4">
+        <div class="product-num">05 / Aperitive</div>
+        <div class="product-vis">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="14" r="1.5"></circle>
+            <circle cx="16" cy="11" r="1.5"></circle>
+            <circle cx="21" cy="14" r="1.5"></circle>
+            <circle cx="13" cy="19" r="1.5"></circle>
+            <circle cx="19" cy="19" r="1.5"></circle>
+            <path d="M6 24 Q 16 18, 26 24"></path>
+          </svg>
+        </div>
+        <h3 class="product-name">Icre și <span class="it">salate</span></h3>
+        <p class="product-desc">Icre, salată de icre, pateuri marinate și aperitive pescărești — alegerea perfectă pentru o masă în familie sau o întâlnire.</p>
+        <div class="product-tags"><span class="product-tag">Aperitiv</span><span class="product-tag">Tradițional</span></div>
+      </article>
+
+      <article class="product reveal d5">
+        <div class="product-num">06 / Gătit pentru tine</div>
+        <div class="product-vis">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 14 L26 14 L24 24 Q 24 26, 22 26 L10 26 Q 8 26, 8 24 L6 14 Z"></path>
+            <path d="M11 10 Q 11 7, 14 7 M16 10 Q 16 6, 19 6 M21 10 Q 21 8, 23 8"></path>
+          </svg>
+        </div>
+        <h3 class="product-name">Preparate <span class="it">gătite</span></h3>
+        <p class="product-desc">Mâncare gata pregătită, de luat acasă. Întreabă-ne ce avem proaspăt pe zi — schimbăm meniul după sezon și marfă.</p>
+        <div class="product-tags"><span class="product-tag">Takeaway</span><span class="product-tag">Cald</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== WHY US ============== -->
+<section class="why" id="alege" data-screen-label="04 De ce noi">
+  <div class="section">
+    <div class="why-head">
+      <span class="section-eyebrow reveal">De ce Pescăria Bonito</span>
+      <h2 class="section-title reveal d1">Mici detalii pe care le simți <span class="it">la prima vizită</span>.</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="benefit reveal">
+        <div class="benefit-num">01</div>
+        <h3 class="benefit-title"><span class="it">Prospețime</span></h3>
+        <p class="benefit-desc">Pește ținut pe gheață, expus în vitrina rece. Marfa se schimbă des, după sezon și disponibilitate.</p>
+      </div>
+      <div class="benefit reveal d1">
+        <div class="benefit-num">02</div>
+        <h3 class="benefit-title">Gust <span class="it">autentic</span></h3>
+        <p class="benefit-desc">Rețete simple, ingrediente curate. Lăsăm aroma peștelui să vorbească — așa cum trebuie.</p>
+      </div>
+      <div class="benefit reveal d2">
+        <div class="benefit-num">03</div>
+        <h3 class="benefit-title"><span class="it">Varietate</span></h3>
+        <p class="benefit-desc">De la pește de apă dulce la specii marine, de la grill cald la icre și salate — într-un singur loc.</p>
+      </div>
+      <div class="benefit reveal d3">
+        <div class="benefit-num">04</div>
+        <h3 class="benefit-title">Rapid <span class="it">pentru acasă</span></h3>
+        <p class="benefit-desc">Sună înainte, treci pe la noi și ia totul la pachet. Cina rezolvată, fără bătaie de cap.</p>
+      </div>
+      <div class="benefit reveal d4">
+        <div class="benefit-num">05</div>
+        <h3 class="benefit-title">Locație <span class="it">ușor de găsit</span></h3>
+        <p class="benefit-desc">În inima Galațiului — vino pe jos, cu mașina sau comandă telefonic. Te așteptăm până seara.</p>
+      </div>
+      <div class="benefit reveal d5">
+        <div class="benefit-num">06</div>
+        <h3 class="benefit-title">Pentru orice <span class="it">ocazie</span></h3>
+        <p class="benefit-desc">Prânz în familie, cină romantică sau un platou pentru musafiri — alegem împreună ce ți se potrivește.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== TRUST/REVIEWS ============== -->
+<section class="trust-sec" data-screen-label="05 Trust">
+  <div class="section">
+    <div class="trust-inner">
+      <span class="section-eyebrow reveal" style="justify-content:center; display:inline-flex;">Părerea ta contează</span>
+      <h2 class="trust-quote reveal d1">
+        Experiența clienților contează. <span class="gold">Vizitează-ne</span> și spune-ne părerea ta.
+      </h2>
+      <div class="trust-rule reveal d2"></div>
+      <p class="trust-sub reveal d3">
+        Citim fiecare opinie și ne ajustăm continuu — de la selecția peștelui, la sărarea icrelor și pregătirea la grătar. Vino să încerci și lasă-ne un mesaj direct pe Google.
+      </p>
+      <div class="reveal d4" style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+        <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5l3.09 7.5L23 9l-6 5.5L18.5 23 12 18.8 5.5 23 7 14.5 1 9l7.91-1z"/></svg>
+          Lasă o părere pe Google
+        </a>
+        <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener" class="btn-secondary">
+          Vezi pagina Google
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== LOCATION ============== -->
+<section class="location" id="locatie" data-screen-label="06 Locație">
+  <div class="loc-grid">
+    <div class="loc-info">
+      <span class="section-eyebrow reveal">Vino la noi</span>
+      <h2 class="section-title reveal d1">În inima <span class="it">Galațiului</span>.</h2>
+      <p class="section-lead reveal d2">
+        Te așteptăm cu vitrina pregătită, în fiecare zi. Sună înainte dacă vrei să rezervăm o bucată anume sau să comanzi ceva pe grill.
+      </p>
+
+      <div class="loc-detail">
+        <div class="loc-row reveal d3">
+          <span class="key">Adresă</span>
+          <span class="val">
+            <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener">Strada Roșiori, Galați</a>
+            <small>Cod poștal 800402 · Județul Galați</small>
+          </span>
+        </div>
+        <div class="loc-row reveal d4">
+          <span class="key">Telefon</span>
+          <span class="val">
+            <a href="tel:+40755122422">0755 122 422</a>
+            <small>Pentru rezervări și comenzi telefonice</small>
+          </span>
+        </div>
+        <div class="loc-row reveal d5">
+          <span class="key">Program</span>
+          <span class="val">
+            Luni — Vineri · 09:00 — 18:00
+            <small>Sâmbătă: 09:00 — 14:00 · Duminică: închis</small>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-frame reveal">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=28.030,45.420,28.065,45.438&amp;layer=mapnik&amp;marker=45.4286594,28.0472978"
+        loading="lazy"
+        title="Locație Pescăria Bonito pe hartă"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="map-overlay">
+        <span></span>
+        <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener" class="open-btn">
+          Deschide în Google Maps
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 L17 7"></path><path d="M7 7 H17 V17"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTACT ============== -->
+<section class="contact" id="contact" data-screen-label="07 Contact">
+  <div class="contact-inner">
+    <div>
+      <span class="section-eyebrow reveal">Contact</span>
+      <h2 class="section-title reveal d1">Un telefon și suntem <span class="it">gata</span>.</h2>
+      <p class="section-lead reveal d2">
+        Sună-ne să ne spui ce-ți dorești — pregătim peștele, îl trecem pe grill sau îți păstrăm o bucată anume.
+      </p>
+
+      <div class="contact-actions">
+        <a href="tel:+40755122422" class="btn-primary reveal d3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          Sună 0755 122 422
+        </a>
+        <a href="https://www.google.com/maps/dir//Pescarie+Bonito,+Galati" target="_blank" rel="noopener" class="btn-secondary reveal d4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+          Indicații de orientare
+        </a>
+      </div>
+
+      <div class="socials reveal d5" aria-label="Social media">
+        <a href="https://www.facebook.com/p/Pesc%C4%83ria-Bonito-Gala%C8%9Bi-100057559475057/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="#" class="social-btn" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"></circle></svg>
+        </a>
+        <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener" class="social-btn" aria-label="Google Maps">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hours-card reveal d3">
+      <h4>
+        Program
+        <span class="status" id="openStatus">Deschis acum</span>
+      </h4>
+      <ul class="hours-list" id="hoursList">
+        <li><span class="day">Luni</span><span class="time">09:00 — 18:00</span></li>
+        <li><span class="day">Marți</span><span class="time">09:00 — 18:00</span></li>
+        <li><span class="day">Miercuri</span><span class="time">09:00 — 18:00</span></li>
+        <li><span class="day">Joi</span><span class="time">09:00 — 18:00</span></li>
+        <li><span class="day">Vineri</span><span class="time">09:00 — 18:00</span></li>
+        <li><span class="day">Sâmbătă</span><span class="time">09:00 — 14:00</span></li>
+        <li><span class="day">Duminică</span><span class="time">Închis</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FINAL CTA ============== -->
+<section class="final" data-screen-label="08 Final">
+  <div class="final-inner">
+    <span class="section-eyebrow reveal" style="justify-content:center; display:inline-flex;">Te așteptăm</span>
+    <h2 class="final-title reveal d1">
+      Vino azi după <span class="it">peștele zilei</span>.
+    </h2>
+    <p class="final-sub reveal d2">
+      O vitrină plină, miros de mare și grătar — și un telefon distanță de o cină bună acasă.
+    </p>
+    <div class="final-ctas reveal d3">
+      <a href="tel:+40755122422" class="btn-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        Sună acum
+      </a>
+      <a href="https://www.google.com/maps/place/Pescarie+Bonito/@45.4286594,28.0459206,17z/data=!4m6!3m5!1s0x40b6defdb7d6e09d:0xc9eff53c4d78b774!8m2!3d45.4286594!4d28.0472978!16s%2Fg%2F11k5ls4l7y" target="_blank" rel="noopener" class="btn-secondary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        Deschide în Google Maps
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>© Pescăria Bonito · Galați, România</div>
+    <div>Strada Roșiori · 0755 122 422</div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  const onScroll = () => {
+    if (window.scrollY > 40) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  // Mobile menu
+  const toggle = document.getElementById('menuToggle');
+  const mobMenu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('open');
+    mobMenu.classList.toggle('open');
+  });
+  mobMenu.querySelectorAll('a').forEach(a =>
+    a.addEventListener('click', () => {
+      toggle.classList.remove('open');
+      mobMenu.classList.remove('open');
+    })
+  );
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // Today's hour highlighting + open/closed badge
+  const days = ['Duminică','Luni','Marți','Miercuri','Joi','Vineri','Sâmbătă'];
+  const now = new Date();
+  const todayIdx = now.getDay();
+  const hoursItems = document.querySelectorAll('#hoursList li');
+  hoursItems.forEach(li => {
+    const day = li.querySelector('.day').textContent.trim();
+    if (day === days[todayIdx]) li.classList.add('today');
+  });
+  // Open status
+  const status = document.getElementById('openStatus');
+  const hr = now.getHours();
+  const closeHr = todayIdx === 6 ? 14 : 18;
+  const isOpen = (todayIdx !== 0) && hr >= 9 && hr < closeHr;
+  if (!isOpen) {
+    status.textContent = 'Închis';
+    status.style.color = 'var(--cream-faint)';
+    const dot = status; // change ::before via inline style is tricky; leave green-styled
+  }
+</script>
+
+</body>
+</html>
